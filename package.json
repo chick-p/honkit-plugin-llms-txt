@@ -7,7 +7,8 @@
     "honkit": ">=3.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "biome check",
+    "fix": "pnpm run lint:biome --write ."
   },
   "keywords": [],
   "author": "chick-p",
