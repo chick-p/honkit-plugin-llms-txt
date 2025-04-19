@@ -11,5 +11,8 @@
   },
   "keywords": [],
   "author": "chick-p",
-  "license": "Apache-2.0 License"
+  "license": "Apache-2.0 License",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4"
+  }
 }
