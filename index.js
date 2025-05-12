@@ -26,20 +26,19 @@ function pageHookHandler(page) {
   return page;
 }
 
-function makeLLMsTxt(bookTitle, currentUrl) {
+function makeLLMsTxt(bookTitle, baseUrl) {
   let linkList = [];
   for (const { title, path } of pages) {
-    linkList = linkList.concat(`- [${title}](${currentUrl}${path})`);
+    const url = new URL(path, baseUrl);
+    linkList = linkList.concat(`- [${title}](${url.toString()})`);
   }
   return `# ${bookTitle}\n\n## Docs\n${linkList.join("\n")}`;
 }
 
 function finishHookHandler() {
   const pluginConfig = this.config.get(`pluginsConfig.${pluginName}`);
-  const url = new URL("/", pluginConfig.url);
   const bookTitle = this.book.config.get("title");
-
-  const content = makeLLMsTxt(bookTitle, url);
+  const content = makeLLMsTxt(bookTitle, pluginConfig.url);
   return this.output.writeFile("llms.txt", content);
 }
 
