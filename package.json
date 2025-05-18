@@ -8,12 +8,15 @@
   },
   "scripts": {
     "lint": "biome check",
-    "fix": "npm run lint --write ."
+    "fix": "npm run lint --write .",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "chick-p",
   "license": "Apache-2.0 License",
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4"
+    "@biomejs/biome": "^1.9.4",
+    "honkit-tester": "^2.0.0",
+    "vitest": "^3.1.3"
   }
 }
