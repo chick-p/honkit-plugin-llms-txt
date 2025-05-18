@@ -8,7 +8,8 @@
   },
   "scripts": {
     "lint": "biome check",
-    "fix": "npm run lint --write ."
+    "fix": "npm run lint --write .",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "chick-p",
