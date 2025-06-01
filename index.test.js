@@ -9,8 +9,8 @@ const llmsTxtContent = `# Test Book
 - [Introduction](https://example.com/)
 - [second](https://example.com/second.html)`;
 
-test("Generate llms.txt", () => {
-  return tester
+test("Generate llms.txt", async () => {
+  const result = await tester
     .builder()
     .withContent("First page content")
     .withPage("second", "Second page content")
@@ -24,8 +24,7 @@ test("Generate llms.txt", () => {
         },
       },
     })
-    .create()
-    .then((result) => {
-      expect(result.get("llms.txt").content).toEqual(llmsTxtContent);
-    });
+    .create();
+  const content = result.get("llms.txt").content;
+  expect(content).toEqual(llmsTxtContent);
 });
