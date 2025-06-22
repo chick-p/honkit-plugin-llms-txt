@@ -1,7 +1,6 @@
 import path from "node:path";
-import { expect, test } from "vitest";
-
 import tester from "honkit-tester";
+import { expect, test } from "vitest";
 
 const llmsTxtContent = `# Test Book
 
