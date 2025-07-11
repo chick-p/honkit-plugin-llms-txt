@@ -15,7 +15,7 @@
   "author": "chick-p",
   "license": "Apache-2.0 License",
   "devDependencies": {
-    "@biomejs/biome": "^2.0.6",
+    "@biomejs/biome": "^2.1.1",
     "honkit-tester": "^2.0.0",
     "vitest": "^3.2.4"
   }
