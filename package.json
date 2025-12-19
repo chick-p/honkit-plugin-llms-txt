@@ -17,6 +17,6 @@
   "devDependencies": {
     "@biomejs/biome": "^2.3.10",
     "honkit-tester": "^2.0.0",
-    "vitest": "^4.0.15"
+    "vitest": "^4.0.16"
   }
 }
