@@ -27,9 +27,9 @@ Install with npm and use it for your book with in the `book.json`:
 
 ## Options
 
-| Name | Type | Default | Description |
-| ---- | ---- | ------- | ----------- |
-| url | string | `https://example.com` | The base URL of your book. |
+| Name | Type   | Default               | Description                |
+| ---- | ------ | --------------------- | -------------------------- |
+| url  | string | `https://example.com` | The base URL of your book. |
 
 ## License
 
